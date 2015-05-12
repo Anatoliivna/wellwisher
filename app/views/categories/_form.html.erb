@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3 form-box">
+    <div class="form-top">
+      <h1><%= title %></h1>
+    </div>
+    <div class="form-bottom">
+      <%= form_for @category, html: {class: 'login-form'} do |f| %>
+          <div class="form-group">
+            <%= f.label :name, 'Name:' %>
+            <%= f.text_field :name, class: 'form-control', placeholder: 'Name...' %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.submit :'Save', :class => 'btn' %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>

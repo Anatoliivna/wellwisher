@@ -1,0 +1,6 @@
+<h2><%= @wish.title %></h2>
+<%= image_tag @wish.image.url(:medium) %>
+<span><%= @wish.category.name %></span>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Look! It's what i wish: <%= @wish.title %>" data-via="wellwisher" data-url="<%= wish_url(@wish) %>"> Tweet </a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div class="fb-share-button" data-href="<%= wish_url(@wish) %>" data-layout="button_count"></div>

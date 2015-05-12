@@ -1,0 +1,37 @@
+<h1>My wishes list</h1>
+
+<div class="table-responsive">
+  <table class="table table-striped item-list-table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @wishes.each do |wish| %>
+        <tr>
+          <td><%= wish.title %></td>
+          <td><%= image_tag wish.image.url(:small), class: 'img-circle' %></td>
+          <td class="action-column"><a href="https://twitter.com/share" class="twitter-share-button" data-text="Look! It's what i wish: <%= wish.title %>" data-via="wellwisher" data-url="<%= wish_url(wish) %>"> Tweet </a></td>
+          <td class="action-column"><div class="fb-share-button" data-href="<%= wish_url(@wish) %>" data-layout="button_count"></div></td>
+          <td class="action-column">
+            <%= link_to edit_wish_path(wish), class: 'btn btn-primary' do %>
+                <i class="fa fa-pencil"></i> Edit
+            <% end %>
+          </td>
+          <td class="action-column">
+            <%= link_to wish_path(wish), method: :delete, class: 'btn btn-danger', data: {confirm: 'Are your sure?'} do %>
+                <i class="fa fa-trash-o"></i> Delete
+            <% end %>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>

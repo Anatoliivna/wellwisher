@@ -1,0 +1,30 @@
+<h2>My Categories</h2>
+
+<div class="table-responsive">
+  <table class="table table-striped item-list-table">
+    <thead>
+        <tr>
+          <th>Name</th>
+          <th></th>
+          <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @categories.each do |category| %>
+        <tr>
+          <td><%= link_to category.name, category %></td>
+          <td class="action-column">
+            <%= link_to edit_category_path(category), class: 'btn btn-primary' do %>
+              <i class="fa fa-pencil"></i> Edit
+            <% end %>
+          </td>
+          <td class="action-column">
+            <%= link_to edit_category_path(category), method: :delete, class: 'btn btn-danger', data: {confirm: 'Are your sure?'} do %>
+                <i class="fa fa-trash-o"></i> Delete
+            <% end %>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
