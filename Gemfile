@@ -12,7 +12,7 @@ gem 'turbolinks',               '~> 2.5.3'                      # Turbolinks mak
 gem 'jbuilder',                 '~> 2.2.12'                     # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'devise',                   '~> 3.4.1'
 gem 'omniauth',                 '~> 1.2.2'                      # Use Omniauth for Login with Google+, Facebook, identity
-gem 'omniauth-google-oauth2',   '~> 0.2.6'
+# gem 'omniauth-google-oauth2',   '~> 0.2.6'
 gem 'omniauth-facebook',        '~> 2.0.1'
 gem 'omniauth-identity',        '~> 1.1.1'
 gem 'omniauth-twitter',         '~> 1.1.0'
@@ -39,4 +39,5 @@ group :development, :test do
   gem 'spring',                 '~> 1.3.4'                      # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
   gem 'font-awesome-sass'
+  gem 'omniauth-gplus'
 
