@@ -1,17 +1,16 @@
-<h2> Hi, this is Your profile </h2>
+<!--<h2> Hi, this is Your profile </h2>-->
 
 <br>
 
 <div class="col-sm-2">
   <%= link_to persons_profile_path do %>
-    <img title="profile image" class="img-circle img-responsive" src="http://www.rlsandbox.com/img/profile.jpg" />
+    <img title="profile image" class="img-circle img-responsive" src="/assets/user.png" />
   <% end %>
-  <span><%= current_user.email %></span>
 </div>
 
 <br>
 
-<div id="w">
+<div id="profile">
   <div id="content" class="clearfix">
     <nav id="profiletabs">
       <ul class="nav navbar-nav">
@@ -27,7 +26,6 @@
         <li>
           <%= link_to 'My wish lists', wishes_path%>
         </li>
-        <li><a href="#settings">Settings</a></li>
       </ul>
     </nav>
   </div>

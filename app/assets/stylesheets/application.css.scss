@@ -17,6 +17,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  background: url("/assets/2.jpg") no-repeat scroll 0 0 transparent;
+  background-size: 100%;
+//  background-size: 100%; /* Современные браузеры */
+//  -moz-background-size: 0%; /* Firefox 3.6+ */
+//  -webkit-background-size: 0%; /* Safari 3.1+ и Chrome 4.0+ */
+//  -o-background-size: 0%; /* Opera 9.6+ */
+}
 .authentications {
   margin-bottom: 30px;
 }
