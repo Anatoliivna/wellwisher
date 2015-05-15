@@ -11,4 +11,4 @@ module Net
       self.original_use_ssl = flag
     end
   end
-end
+
