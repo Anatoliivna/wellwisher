@@ -33,6 +33,11 @@
     <div class="container-fluid">
       <div>
         <ul class="nav navbar-nav navbar-right">
+            <li>
+              <%= link_to unauthenticated_root_path, class: 'btn btn-sign' do %>
+                  <i class="fa fa-home"></i>
+              <% end %>
+            </li>
           <% if user_signed_in? %>
               <li><%= link_to "#{current_user.email}", edit_user_registration_path, class: 'btn btn-sign' %></li>
               <li><%= link_to "Logout", destroy_user_session_path, :method => :delete, class: 'btn btn-sign' %></li>

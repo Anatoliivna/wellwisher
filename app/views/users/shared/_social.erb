@@ -1,8 +1,8 @@
 <div class="social-login-buttons">
   <% if devise_mapping.omniauthable? %>
-      <% resource_class.omniauth_providers.each do |provider| puts provider %>
-          <%= link_to omniauth_authorize_path(resource_name, provider), :class => "btn btn-link-1 btn-link-1-#{provider.to_s}" do %>
-              <i class="fa fa-<%= provider.to_s %>"></i> <%= provider.to_s.titleize %>
+      <% resource_class.omniauth_providers.each do |provider| provider_slug = provider.to_s == 'gplus' ? 'google-plus' : provider.to_s %>
+          <%= link_to omniauth_authorize_path(resource_name, provider), :class => "btn btn-link-1 btn-link-1-#{provider_slug}" do %>
+              <i class="fa fa-<%= provider_slug %>"></i> <%= provider_slug.titleize %>
           <% end %>
       <% end %>
   <% end %>
