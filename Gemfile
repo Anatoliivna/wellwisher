@@ -8,7 +8,7 @@ gem 'sass-rails',               '~> 5.0'                        # Use SCSS for s
 gem 'uglifier',                 '~> 2.7.1'                      # Use Uglifier as compressor for JavaScript assets
 gem 'coffee-rails',             '~> 4.1.0'                      # Use CoffeeScript for .coffee assets and views
 gem 'jquery-rails',             '~> 4.0.3'                      # Use jquery as the JavaScript library
-gem 'turbolinks',               '~> 2.5.3'                      # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+# gem 'turbolinks',               '~> 2.5.3'                      # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder',                 '~> 2.2.12'                     # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'devise',                   '~> 3.4.1'
 gem 'omniauth',                 '~> 1.2.2'                      # Use Omniauth for Login with Google+, Facebook, identity
@@ -25,6 +25,7 @@ gem 'capistrano-rails',         '~> 1.1.2', group: :development # Use Capistrano
 gem 'bcrypt',                   '~> 3.1.10'                     # Use ActiveModel has_secure_password
 gem 'kaminari',                 '~> 0.16.3'
 gem 'simple_form',              '~> 3.1.0'
+gem 'font-awesome-sass'
 
 group :production do
   gem 'unicorn',                '~> 4.8.3'                      # Use Unicorn as the app server
