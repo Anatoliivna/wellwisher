@@ -1,28 +1,30 @@
 == README
+WellWisher - it's a web application that help you keep all you wishes in one place.
+http://prntscr.com/76jjpu
+1 Step: Registration
+Create your own account at WellWisher with Email and password OR Use your Facebook, Twitter, Google+ accounts.
+Get confirmation Email and Login to the system.
+http://prntscr.com/76jjvv
+2 Step: Login
+After confirmation Email, you can Login or Use Login with social networks.
+http://prntscr.com/76jknh
+3 Step: User's cabinet
+As user you could:
+- Add new category
+- Open your categories list with "My categories" button
+http://prntscr.com/76jnwy
+- Add new Wish
+- Open your wish lists with "My wish lists" button
+http://prntscr.com/76jlr4
+4 Step: Add new category
+Add Title, Click Save, and Create your category.
+http://prntscr.com/76jn9h
+5 Step: Add new wish
+Add Title, Choose a file (picture in jpg/png), Choose a wish category, Click Save and Create your Wish!
+http://prntscr.com/76jo4a
+Recommendations:
+Use Home button always as you need back to User cabinet.
+http://prntscr.com/76jp7b
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
+Enjoy WellWisher!
 <tt>rake doc:app</tt>.
